@@ -1,8 +1,19 @@
 <meta charset="utf-8">
 <title>srs-webrtc-player demo</title>
-<script src="https://unpkg.com/vue@2"></script>
-<script src="./srs-webrtc-player.js"></script>
+<script src="//unpkg.com/vue@2"></script>
+<script src="./srs-webrtc-player.umd.js"></script>
 
 
-<srs-webrtc-player></srs-webrtc-player>
+<div id="app">
+  <demo></demo>
+</div>
 
+<script>
+
+new Vue({
+  components: {
+    demo: srs-webrtc-player
+  }
+}).$mount('#app')
+
+</script>
