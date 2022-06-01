@@ -1,6 +1,6 @@
 {
   "name": "srs-webrtc-player",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "main":"lib/srs-webrtc-player.common.js",
   "scripts": {
     "dev": "vue-cli-service serve --open",

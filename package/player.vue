@@ -28,25 +28,25 @@
 				align-items: center;
 			">
 			<!-- 关闭操作 -->
-			<div style="align-self: flex-end;margin-right: 10px;">
-				<i class="el-icon-close" style="color:white;cursor: pointer;" @click="close"></i>
+			<div style="align-self: flex-end; margin-right: 10px">
+				<i class="el-icon-close" style="color: white; cursor: pointer" @click="close"></i>
 			</div>
 			<!-- 云台控制 -->
 			<div style="
-				flex:1;
-				width: 150px;
-				background-color: black;
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-				justify-content: center;
-			">
+					flex: 1;
+					width: 150px;
+					background-color: black;
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					justify-content: center;
+				">
 				<div>
 					<!-- 上 -->
 					<el-button type="info" icon="el-icon-caret-top" circle size="small" @click="control('up')">
 					</el-button>
 				</div>
-				<div style="display: flex;margin:10px;">
+				<div style="display: flex; margin: 10px">
 					<!-- 左 -->
 					<el-button type="info" icon="el-icon-caret-left" circle size="small" @click="control('left')">
 					</el-button>
@@ -74,10 +74,7 @@
 	</div>
 </template>
 <script>
-import Vue from "vue";
-import ElementUI from "element-ui";
 import { SrsRtcPlayerAsync } from "./srs.sdk.js";
-Vue.use(ElementUI);
 export default {
 	name: "WebrtcPlayer",
 	props: {
@@ -109,12 +106,12 @@ export default {
 	methods: {
 		// ptzCtl 云台控制
 		control(dir) {
-			this.$emit("control", dir)
+			this.$emit("control", dir);
 		},
 		// close 关闭
 		close() {
-			this.$emit("close")
-		}
+			this.$emit("close");
+		},
 	},
 };
 </script>
