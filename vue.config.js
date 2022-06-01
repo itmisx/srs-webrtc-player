@@ -10,4 +10,5 @@ module.exports = {
 			chunks: ["chunk-vendors", "chunk-common", "index"],
 		},
 	},
+	css: { extract: false }
 };
