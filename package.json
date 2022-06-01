@@ -4,7 +4,7 @@
   "main":"lib/srs-webrtc-player.common.js",
   "scripts": {
     "dev": "vue-cli-service serve --open",
-    "build": "vue-cli-service build --target lib  --inline-vue --name srs-webrtc-player package/player.vue"
+    "build": "vue-cli-service build --target lib  --name srs-webrtc-player package/player.vue"
   },
   "dependencies": {
     "core-js": "^3.6.5",
