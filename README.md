@@ -7,7 +7,7 @@ srs-webrtc-player 对 webrtc 进行了简单封装，支持 srs 的 rtc 流的�
 #### 安装
 
 ```
-npm intall srs-webrtc-player
+npm intall git+https://github.com/itmisx/srs-webrtc-player
 ```
 
 #### 属性
